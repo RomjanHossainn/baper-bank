@@ -51,40 +51,40 @@
 
 
 
-document.getElementById('deposit-btn').addEventListener('click',function(){
-   const dipositfieldValue =  getTheInputFieldValue('deopsit-input');
-   const dipositText = getDipositAndWihtrawTxt('curentdiposit')
-   const getMainBalanceAmount = getDipositAndWihtrawTxt('toalBalance');
-   const dipositBalanceTotal = dipositfieldValue + getMainBalanceAmount;
-   if(dipositBalanceTotal >=  10000){
-      return alert('apni 10000 hajar beshi taka rakhte parben na')
-   }else{
-      setDipositAndWithRawValue(dipositBalanceTotal,'toalBalance');
-   }
-   const constDipositTotal = dipositfieldValue + dipositText;
-   setDipositAndWithRawValue(constDipositTotal,'curentdiposit');
+// document.getElementById('deposit-btn').addEventListener('click',function(){
+//    const dipositfieldValue =  getTheInputFieldValue('deopsit-input');
+//    const dipositText = getDipositAndWihtrawTxt('curentdiposit')
+//    const getMainBalanceAmount = getDipositAndWihtrawTxt('toalBalance');
+//    const dipositBalanceTotal = dipositfieldValue + getMainBalanceAmount;
+//    if(dipositBalanceTotal >=  10000){
+//       return alert('apni 10000 hajar beshi taka rakhte parben na')
+//    }else{
+//       setDipositAndWithRawValue(dipositBalanceTotal,'toalBalance');
+//    }
+//    const constDipositTotal = dipositfieldValue + dipositText;
+//    setDipositAndWithRawValue(constDipositTotal,'curentdiposit');
    
-})
+// })
 
 
-document.getElementById('withrawBtn').addEventListener('click',function(){
+// document.getElementById('withrawBtn').addEventListener('click',function(){
 
-   const withRawfieldValue =  getTheInputFieldValue('withrawInput');
-   const withrawText = getDipositAndWihtrawTxt('withraw-span');
+//    const withRawfieldValue =  getTheInputFieldValue('withrawInput');
+//    const withrawText = getDipositAndWihtrawTxt('withraw-span');
 
-   const getMainBalanceAmount = getDipositAndWihtrawTxt('toalBalance');
-   if(withRawfieldValue > getMainBalanceAmount){
-      return alert('Amount not avalaval');
-   }
-   const withRawTotal = withRawfieldValue + withrawText;
+//    const getMainBalanceAmount = getDipositAndWihtrawTxt('toalBalance');
+//    if(withRawfieldValue > getMainBalanceAmount){
+//       return alert('Amount not avalaval');
+//    }
+//    const withRawTotal = withRawfieldValue + withrawText;
 
-   setDipositAndWithRawValue(withRawTotal,'withraw-span')
+//    setDipositAndWithRawValue(withRawTotal,'withraw-span')
 
-   const withrawBalanceToltal = getMainBalanceAmount - withRawfieldValue;
-   setDipositAndWithRawValue(withrawBalanceToltal,'toalBalance')
+//    const withrawBalanceToltal = getMainBalanceAmount - withRawfieldValue;
+//    setDipositAndWithRawValue(withrawBalanceToltal,'toalBalance')
    
    
-})
+// })
 
 
 
